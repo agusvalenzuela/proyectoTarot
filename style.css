@@ -1,0 +1,112 @@
+
+:root {
+
+    --color-main: #C1EAF0;
+    --color-aside: #F2E863;
+    --color-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, input, textarea {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.envoltorio {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--color-main);
+}
+
+aside {
+    padding: 4rem;
+    padding-right: 0;
+    width: 25rem;
+    background-color: var(--color-aside);
+    height: 100%;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+}
+
+.boton-lateral {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.boton-lateral.active {
+    background-color: var(--color-main);
+    width: 100%;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 1.4rem;
+    top: 0;
+    height: 15vh;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.texto-lateral {
+    margin-top: 2rem;
+}
+
+main {
+    background-color: var(--color-main);
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.servicio-titulo-principal {
+    background-color: var(--color-main);
+}
+
+.servicio-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.servicio-imagen {
+    width: 50% ;
+    border-radius: 1rem;
+}
+
+.servicio-detalles {
+    background-color: var(--color-aside);
+    padding: .5rem;
+    width: 50%;
+    border-radius: 1rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.servicio-titulo {
+    font-size: 1rem;
+}
